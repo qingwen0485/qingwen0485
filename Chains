@@ -1,0 +1,33 @@
+# 引入所需模块和类
+from langchain.chains import LLMChain
+from langchain.chat_models import ChatOpenAI
+from langchain import PromptTemplate
+from langchain.prompts.chat import (
+    ChatPromptTemplate,  # 引入对话模板类
+    HumanMessagePromptTemplate,  # 引入人类消息模板类
+)
+ 
+ 
+# 创建人类消息模板类
+human_message_prompt = HumanMessagePromptTemplate(
+        prompt=PromptTemplate(
+            template="给我一个制作{product}的好公司名字?",  # 输入模板，其中product为占位符
+            input_variables=["product"],  # 指定输入变量为product
+        )
+    )
+ 
+ 
+# 创建对话模板类
+chat_prompt_template = ChatPromptTemplate.from_messages([human_message_prompt])
+ 
+ 
+# 创建OpenAI聊天模型对象
+chat = ChatOpenAI(temperature=0.9)
+ 
+ 
+# 创建LLMChain对象，将聊天模型和对话模板传入
+chain = LLMChain(llm=chat, prompt=chat_prompt_template)
+ 
+ 
+# 运行LLMChain对象，并输出结果
+print(chain.run("袜子"))
