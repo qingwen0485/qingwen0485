@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" /> <title>过年好</title> 
+<script type="text/javascript"> 
+ 
+<style>
+html,body{
+	margin:80px;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:#80;
+}
+ 
+#canvas{
+	width:300%;
+	height:300%;
