@@ -1,0 +1,18 @@
+SetPos(2 * x, y);
+			cout << "  ";
+		}
+	}
+	return;
+ 
+}
+ 
+bool Game::downSet(int id)
+{
+	if (id == 0)
+		return true;
+ 
+	finish = clock();
+ 
+	if (finish - start < speed)
+	{
+		return false;
