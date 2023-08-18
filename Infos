@@ -1,0 +1,11 @@
+/** 
+   * see BillingManager#getBillingInfos(BillingInfo[]) 
+   */ 
+  public BillingInfo[]  
+    getBillingInfos(BillingInfo[] inBillingInfos)  
+    throws BillingException 
+  { 
+      for (int index = 0; index < inBillingInfos.length; index++) 
+    { 
+      // Set IsAuthorizeNeeded flag 
+      inBillingInfos[index].setAuthorizeNeeded(true); 
