@@ -1,0 +1,5 @@
+public static int REFUND_RESPONSE = SUCCESS; 
+  public static int REVERSE_RESPONSE = SUCCESS; 
+  public static int SUBSCRIBE_RESPONSE = SUCCESS; 
+  public static int UNSUBSCRIBE_RESPONSE = SUCCESS; 
+  public static int CHECK_SUBSCRIPTION_RESPONSE = SUCCESS; 
