@@ -1,0 +1,5 @@
+  // get the first byte[] in the map 
+        // ignore the rest for this sample  
+        byte[] bytes = (byte[]) 
+          content.getMimeBytesMap().values().iterator().next(); 
+ 
