@@ -1,0 +1,7 @@
+ cs.purchaseContent(contentId, campaignId, true); 
+ 
+  // Commit the Transaction 
+  ApiUtil.commitTransaction(); 
+} 
+catch (MDSException e) 
+{ 
