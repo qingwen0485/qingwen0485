@@ -1,0 +1,6 @@
+connFactory, providerURL, topicName); 
+      System.out.println("Subscriber created."); 
+      System.out.println("clientID="+s.getClientID()); 
+      System.out.println("subName="+s.getSubName()); 
+      System.out.println("selector="+s.getSelector()); 
+      System.out.println("durable="+s.isDurable()); 
