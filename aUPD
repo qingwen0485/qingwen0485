@@ -1,0 +1,5 @@
+String middleName = aUPD.getMiddleInitial(); 
+            String gender = aUPD.getGender(); 
+            String salutation = aUPD.getOccupation(); 
+            String street1 = aUPD.getStreet(); 
+            String street2 = aUPD.getStreetNumber(); 
